@@ -57,6 +57,9 @@ class Main:
 
         args: list[Any] = self.parseArgs(parts[2:]) if len(parts) != 2 else []
 
+        self.CupmFuncs(sector, action, args)
+    
+    def CupmFuncs(self, sector: str, action: str, args: list[Any]):
         match sector:
             case "@basic":
                 match action:
